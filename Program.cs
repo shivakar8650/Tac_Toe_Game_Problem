@@ -7,9 +7,13 @@ namespace TicTacToeGame
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
+            //create object
             TicTacToeGame game = new TicTacToeGame();
-            game.Create_GameBoard();
+            //call generate bord method 
+            char[] game_Board= game.Create_GameBoard();
+            //call user taken input
+            char UserInput = game.takeUserInput();
+            char computerInput = (UserInput == 'X') ? 'O' : 'X';
         }
     }
 }
