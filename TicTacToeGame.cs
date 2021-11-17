@@ -16,11 +16,22 @@ namespace TicTacToeGame
             }
             return Game_Board;
         }
-        public char takeUserInput()
+        public  char takeUserInput()
         {
-            Console.WriteLine("Enter you Choice from O/X :");
-            char playerChoice = Convert.ToChar(Console.ReadLine());
-            return char.ToUpper(playerChoice);
+            Console.WriteLine("Enter your Choice from O/X :");
+            char input = Convert.ToChar(Console.ReadLine());
+            return char.ToUpper(input);
         }
+
+        public void displayBoard()
+        {
+            Console.WriteLine($"   |    |   ");
+            Console.WriteLine($"___|____|___");
+            Console.WriteLine($"   |    |   ");
+            Console.WriteLine($"___|____|___");
+            Console.WriteLine($"   |    |   ");
+            Console.WriteLine($"   |    |   ");
+        }
+          
     }
 }
