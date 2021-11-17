@@ -24,7 +24,7 @@ namespace TicTacToeGame
         }
 
         public void displayBoard()
-        {
+        { Console.WriteLine("\n\n");
             Console.WriteLine($"   |    |   ");
             Console.WriteLine($"___|____|___");
             Console.WriteLine($"   |    |   ");
